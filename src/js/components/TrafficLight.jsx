@@ -3,9 +3,6 @@ import React, {useState} from "react";
 const TrafficLight = () => {
     const [select, setSelect] = useState ("red")
 
-    const changeLight = (color) =>{
-        setSelect(color)
-    }
     
     return(
         <div className="d-flex justify-content-center">
@@ -13,11 +10,11 @@ const TrafficLight = () => {
 			<div className="fullBox">
 				<div 
                     className= {`red ${select == "red" ? "switchOn" : ""}`}
-                    onClick={()=> changeLight("red")}
+                    onClick={()=> setSelect("red")}
                 ></div>
 				<div 
                     className= {`yellow ${select == "yellow" ? "switchOn" : ""}`}
-                    onClick={()=> changeLight("yellow")}
+                    onClick={()=> setSelect("yellow")}
                     ></div>
 				<div 
                     className= {`green ${select == "green" ? "switchOn" : ""}`}
