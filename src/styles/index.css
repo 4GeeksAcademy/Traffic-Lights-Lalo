@@ -1,11 +1,42 @@
-/* 
+body{
+    position: relative;
+}
 
-    You can write your own styles here...
-    
-    
-    ...Or you can use the import command to include 
-    other sylesheets into your bunde as well, e.j:
-    
-    import 'relative/path/to/stylesheet.scss';
+.suport{
+    background: black;
+    width: 20px;
+    height: 200px;
+    margin-top: 50px;
+    border-radius: 20px 20px 0 0;  
+    position: absolute;
+    }
 
-*/
+.fullBox{
+    background: black;
+    width: 150px;
+    margin-top: 250px;
+    border-radius: 10px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.fullBox div{
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    border: 1px solid black;
+    margin: 5px;
+}
+.red{
+    background: rgb(184, 1, 1);
+}
+.yellow{
+    background: rgb(194, 194, 1);
+}
+.green{
+    background: rgb(2, 99, 2);
+}
+.switchOn{
+    box-shadow: 0px 0px 141px 0px rgb(255, 250, 157);
+}
